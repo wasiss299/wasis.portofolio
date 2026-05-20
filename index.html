@@ -4,77 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Wasis Yoga Wicaksono</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
 
+    <div class="bg-blur blur1"></div>
+    <div class="bg-blur blur2"></div>
+
     <header>
+        <div class="container navbar">
+            <div class="logo">WASIS.</div>
+
+            <nav>
+                <a href="#about">Tentang</a>
+                <a href="#skill">Skill</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+
         <div class="container hero">
+
             <div class="hero-text">
-                <h1>Wasis Yoga Wicaksono</h1>
-                <h2>Mahasiswa Teknik Informatika</h2>
+                <span class="tag">PORTFOLIO WEBSITE</span>
+
+                <h1>
+                    Hi, Saya <span>Wasis Yoga</span>
+                </h1>
+
                 <p>
-                    Mahasiswa Fakultas Ilmu Komputer Universitas Duta Bangsa Surakarta
-                    semester 6 yang memiliki minat pada pengembangan website,
-                    aplikasi desktop Java, Flutter, serta teknologi IoT.
+                    Mahasiswa Teknik Informatika Universitas Duta Bangsa Surakarta
+                    yang berfokus pada Web Development, Java Programming,
+                    Flutter Development, dan Internet of Things.
                 </p>
 
-                <div class="btn-group">
-                    <a href="#project" class="btn">Lihat Project</a>
-                    <a href="#contact" class="btn-outline">Kontak</a>
+                <div class="hero-button">
+                    <a href="#project" class="btn-primary">Lihat Project</a>
+                    <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+                </div>
+
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <img src="foto.jpg" alt="Foto Wasis Yoga">
+                <div class="image-box">
+                    <img src="foto.jpg" alt="Wasis Yoga">
+                </div>
             </div>
+
         </div>
     </header>
 
 
     <section id="about">
         <div class="container">
-            <h2 class="title">Tentang Saya</h2>
+            <h2 class="section-title">Tentang Saya</h2>
 
-            <div class="about-card">
-                <p>
-                    Nama saya <strong>Wasis Yoga Wicaksono</strong>, lahir di Klaten
-                    pada 11 Februari 2006. Saat ini saya menempuh pendidikan di
-                    Universitas Duta Bangsa Surakarta pada program studi Teknik Informatika.
-                </p>
+            <div class="about-box">
+                <div class="about-text">
+                    <p>
+                        Saya adalah mahasiswa semester 6 Fakultas Ilmu Komputer
+                        Universitas Duta Bangsa Surakarta.
+                        Saya memiliki minat dalam pengembangan website,
+                        aplikasi desktop Java, Flutter, serta pengembangan teknologi IoT.
+                    </p>
+                </div>
 
-                <div class="info-grid">
-                    <div>
-                        <span>Nama</span>
-                        <p>Wasis Yoga Wicaksono</p>
+                <div class="about-info">
+                    <div class="info-card">
+                        <span>Nama Lengkap</span>
+                        <h3>Wasis Yoga Wicaksono</h3>
                     </div>
 
-                    <div>
-                        <span>Tempat, Tanggal Lahir</span>
-                        <p>Klaten, 11 Februari 2006</p>
+                    <div class="info-card">
+                        <span>TTL</span>
+                        <h3>Klaten, 11 Februari 2006</h3>
                     </div>
 
-                    <div>
+                    <div class="info-card">
                         <span>Alamat</span>
-                        <p>Kriyan 13/06 Babadan Karangdowo</p>
+                        <h3>Kriyan 13/06 Babadan Karangdowo</h3>
                     </div>
 
-                    <div>
-                        <span>Universitas</span>
-                        <p>Universitas Duta Bangsa Surakarta</p>
-                    </div>
-
-                    <div>
-                        <span>Fakultas</span>
-                        <p>Ilmu Komputer</p>
-                    </div>
-
-                    <div>
-                        <span>Program Studi</span>
-                        <p>Teknik Informatika</p>
+                    <div class="info-card">
+                        <span>Pendidikan</span>
+                        <h3>Teknik Informatika</h3>
                     </div>
                 </div>
             </div>
@@ -84,17 +111,50 @@
 
     <section id="skill">
         <div class="container">
-            <h2 class="title">Skill</h2>
+            <h2 class="section-title">My Skills</h2>
 
             <div class="skill-grid">
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">PHP</div>
-                <div class="skill-card">MySQL</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">Flutter</div>
-                <div class="skill-card">UI Design</div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-php"></i>
+                    <h3>PHP</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-flutter"></i>
+                    <h3>Flutter</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI Design</h3>
+                </div>
+
             </div>
         </div>
     </section>
@@ -102,41 +162,48 @@
 
     <section id="project">
         <div class="container">
-            <h2 class="title">Project</h2>
+            <h2 class="section-title">Latest Project</h2>
 
             <div class="project-grid">
 
                 <div class="project-card">
-                    <h3>Sistem Reservasi Hotel</h3>
-                    <p>
-                        Website booking hotel berbasis PHP dan MySQL
-                        dengan fitur login, reservasi, laporan,
-                        dan dashboard admin.
-                    </p>
+                    <div class="project-content">
+                        <h3>Sistem Reservasi Hotel</h3>
+                        <p>
+                            Website booking hotel menggunakan PHP dan MySQL
+                            dengan dashboard admin dan sistem reservasi online.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Sistem Pengaduan Rumah Sakit</h3>
-                    <p>
-                        Website pengaduan pasien berbasis web menggunakan
-                        PHP dan MySQL.
-                    </p>
+                    <div class="project-content">
+                        <h3>Sistem Pengaduan Rumah Sakit</h3>
+                        <p>
+                            Website pengaduan pasien berbasis web menggunakan
+                            PHP, MySQL, dan dashboard admin modern.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Sistem Absensi Kelas</h3>
-                    <p>
-                        Aplikasi Java Swing dengan database MySQL
-                        untuk pengolahan data absensi mahasiswa.
-                    </p>
+                    <div class="project-content">
+                        <h3>Sistem Absensi Kelas</h3>
+                        <p>
+                            Aplikasi Java Swing dengan database MySQL
+                            untuk pengolahan absensi mahasiswa.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>IoT Penyiram Tanaman Otomatis</h3>
-                    <p>
-                        Sistem monitoring dan kontrol penyiraman tanaman
-                        berbasis ESP32 dan Internet of Things.
-                    </p>
+                    <div class="project-content">
+                        <h3>IoT Penyiram Tanaman</h3>
+                        <p>
+                            Sistem monitoring dan kontrol otomatis berbasis
+                            ESP32 dan Internet of Things.
+                        </p>
+                    </div>
                 </div>
 
             </div>
@@ -146,19 +213,33 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="title">Kontak</h2>
+            <h2 class="section-title">Contact Me</h2>
 
-            <div class="contact-card">
-                <p><strong>Email 1:</strong> wasisyogakriyan@gmail.com</p>
-                <p><strong>Email 2:</strong> 230103121@mhs.udb.ac.id</p>
-                <p><strong>No HP:</strong> 081391573170</p>
+            <div class="contact-box">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Personal</h3>
+                    <p>wasisyogakriyan@gmail.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Email Kampus</h3>
+                    <p>230103121@mhs.udb.ac.id</p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Nomor HP</h3>
+                    <p>081391573170</p>
+                </div>
             </div>
         </div>
     </section>
 
- 
+
     <footer>
-        <p>© 2026 Wasis Yoga | Portfolio GitHub Pages</p>
+        <p>© 2026 Wasis Yoga Wicaksono | Professional Portfolio Website</p>
     </footer>
 
 </body>
