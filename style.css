@@ -385,13 +385,40 @@ footer{
     border-top:1px solid rgba(255,255,255,0.08);
 }
 
-@media(max-width:992px){
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .container{
+        width:90%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding-top:20px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:14px;
+    }
 
     .hero{
+        min-height:auto;
         flex-direction:column-reverse;
         text-align:center;
-        padding-top:50px;
-        gap:60px;
+        gap:35px;
+        padding:20px 0 50px;
     }
 
     .hero-text{
@@ -400,118 +427,104 @@ footer{
         align-items:center;
     }
 
-    .hero-text p{
-        max-width:100%;
-    }
-
-    .hero-button,
-    .social{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-}
-
-@media(max-width:768px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    .container{
-        width:92%;
-    }
-
-    .navbar{
-        flex-direction:column;
-        gap:20px;
-        text-align:center;
-    }
-
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
-    nav a{
-        margin:0;
-        font-size:15px;
-    }
-
-    .hero{
-        min-height:auto;
-        padding:40px 0 60px;
-    }
-
     .tag{
-        font-size:12px;
-        padding:7px 14px;
+        font-size:11px;
+        padding:6px 14px;
+    }
+
+    .typing{
+        font-size:15px;
+        margin-bottom:15px;
     }
 
     .hero-text h1{
-        font-size:42px;
+        font-size:36px;
         line-height:1.2;
-        margin:20px 0;
+        margin:18px 0;
     }
 
     .hero-text p{
-        font-size:15px;
+        font-size:14px;
         line-height:1.8;
+        max-width:100%;
     }
 
     .hero-button{
         width:100%;
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
+        margin-top:25px;
+        gap:14px;
     }
 
     .btn-primary,
     .btn-secondary{
         width:100%;
-        max-width:280px;
-        text-align:center;
+        max-width:240px;
+        padding:13px;
+        font-size:15px;
     }
 
     .social{
-        gap:15px;
+        margin-top:25px;
+        justify-content:center;
+        gap:14px;
     }
 
     .social a{
-        width:45px;
-        height:45px;
-        font-size:18px;
+        width:42px;
+        height:42px;
+        font-size:16px;
+    }
+
+    .stats-box{
+        margin-top:30px;
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .stats-card{
+        width:100%;
+        padding:18px;
+        border-radius:18px;
+        text-align:center;
+    }
+
+    .stats-card h3{
+        font-size:24px;
+    }
+
+    .stats-card p{
+        font-size:14px;
+    }
+
+    .hero-image{
+        margin-top:10px;
     }
 
     .image-box{
-        width:240px;
-        height:240px;
+        width:220px;
+        height:220px;
         border-radius:25px;
     }
 
     section{
-        padding:70px 0;
+        padding:65px 0;
     }
 
     .section-title{
-        font-size:34px;
-        margin-bottom:40px;
+        font-size:30px;
+        margin-bottom:35px;
     }
 
     .about-box,
     .info-card,
     .skill-card,
     .project-card,
-    .contact-card{
-        padding:22px;
-        border-radius:22px;
-    }
-
-    .about-text p,
-    .project-content p,
-    .contact-card p{
-        font-size:14px;
+    .contact-card,
+    .timeline-content{
+        padding:20px;
+        border-radius:20px;
     }
 
     .about-info,
@@ -523,20 +536,23 @@ footer{
     }
 
     .skill-card i{
-        font-size:42px;
+        font-size:40px;
     }
 
     .project-card{
         min-height:auto;
     }
 
+    .timeline-item{
+        padding-left:55px;
+    }
+
     footer{
-        font-size:14px;
-        padding:30px 20px;
+        padding:25px 15px;
+        font-size:13px;
         line-height:1.8;
     }
 }
-
 @media(max-width:480px){
 
     .logo{
