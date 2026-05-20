@@ -1,46 +1,165 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Wasis Yoga</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Wasis Yoga Wicaksono</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <h1>Wasis Yoga Wicaksono</h1>
-    <p>Mahasiswa | Web Developer | UI Designer</p>
-  </header>
+    <header>
+        <div class="container hero">
+            <div class="hero-text">
+                <h1>Wasis Yoga Wicaksono</h1>
+                <h2>Mahasiswa Teknik Informatika</h2>
+                <p>
+                    Mahasiswa Fakultas Ilmu Komputer Universitas Duta Bangsa Surakarta
+                    semester 6 yang memiliki minat pada pengembangan website,
+                    aplikasi desktop Java, Flutter, serta teknologi IoT.
+                </p>
 
-  <section class="about">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya mahasiswa Universitas Duta Bangsa Surakarta
-      yang tertarik pada pengembangan web, Java, PHP, dan Flutter.
-    </p>
-  </section>
+                <div class="btn-group">
+                    <a href="#project" class="btn">Lihat Project</a>
+                    <a href="#contact" class="btn-outline">Kontak</a>
+                </div>
+            </div>
 
-  <section class="project">
-    <h2>Project</h2>
+            <div class="hero-image">
+                <img src="foto.jpg" alt="Foto Wasis Yoga">
+            </div>
+        </div>
+    </header>
 
-    <div class="card">
-      <h3>Sistem Reservasi Hotel</h3>
-      <p>Aplikasi booking hotel menggunakan PHP dan MySQL.</p>
-    </div>
 
-    <div class="card">
-      <h3>Sistem Pengaduan Rumah Sakit</h3>
-      <p>Website pengaduan pasien berbasis PHP.</p>
-    </div>
+    <section id="about">
+        <div class="container">
+            <h2 class="title">Tentang Saya</h2>
 
-  </section>
+            <div class="about-card">
+                <p>
+                    Nama saya <strong>Wasis Yoga Wicaksono</strong>, lahir di Klaten
+                    pada 11 Februari 2006. Saat ini saya menempuh pendidikan di
+                    Universitas Duta Bangsa Surakarta pada program studi Teknik Informatika.
+                </p>
 
-  <section class="contact">
-    <h2>Kontak</h2>
-    <p>Email: wasis@example.com</p>
-    <p>GitHub: github.com/username</p>
-  </section>
+                <div class="info-grid">
+                    <div>
+                        <span>Nama</span>
+                        <p>Wasis Yoga Wicaksono</p>
+                    </div>
+
+                    <div>
+                        <span>Tempat, Tanggal Lahir</span>
+                        <p>Klaten, 11 Februari 2006</p>
+                    </div>
+
+                    <div>
+                        <span>Alamat</span>
+                        <p>Kriyan 13/06 Babadan Karangdowo</p>
+                    </div>
+
+                    <div>
+                        <span>Universitas</span>
+                        <p>Universitas Duta Bangsa Surakarta</p>
+                    </div>
+
+                    <div>
+                        <span>Fakultas</span>
+                        <p>Ilmu Komputer</p>
+                    </div>
+
+                    <div>
+                        <span>Program Studi</span>
+                        <p>Teknik Informatika</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skill">
+        <div class="container">
+            <h2 class="title">Skill</h2>
+
+            <div class="skill-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">PHP</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Flutter</div>
+                <div class="skill-card">UI Design</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="project">
+        <div class="container">
+            <h2 class="title">Project</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Sistem Reservasi Hotel</h3>
+                    <p>
+                        Website booking hotel berbasis PHP dan MySQL
+                        dengan fitur login, reservasi, laporan,
+                        dan dashboard admin.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Sistem Pengaduan Rumah Sakit</h3>
+                    <p>
+                        Website pengaduan pasien berbasis web menggunakan
+                        PHP dan MySQL.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Sistem Absensi Kelas</h3>
+                    <p>
+                        Aplikasi Java Swing dengan database MySQL
+                        untuk pengolahan data absensi mahasiswa.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>IoT Penyiram Tanaman Otomatis</h3>
+                    <p>
+                        Sistem monitoring dan kontrol penyiraman tanaman
+                        berbasis ESP32 dan Internet of Things.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="title">Kontak</h2>
+
+            <div class="contact-card">
+                <p><strong>Email 1:</strong> wasisyogakriyan@gmail.com</p>
+                <p><strong>Email 2:</strong> 230103121@mhs.udb.ac.id</p>
+                <p><strong>No HP:</strong> 081391573170</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Wasis Yoga Wicaksono | Portfolio GitHub Pages</p>
+    </footer>
 
 </body>
 </html>
