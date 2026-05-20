@@ -100,6 +100,13 @@ nav a:hover{
     max-width:600px;
 }
 
+.typing{
+    color:#38bdf8;
+    font-size:20px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
 .hero-button{
     margin-top:35px;
     display:flex;
@@ -127,6 +134,31 @@ nav a:hover{
 .btn-secondary{
     border:2px solid #38bdf8;
     color:#38bdf8;
+}
+
+.stats-box{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stats-card{
+    background:rgba(17,24,39,0.8);
+    padding:20px 30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+}
+
+.stats-card h3{
+    color:#38bdf8;
+    font-size:28px;
+}
+
+.stats-card p{
+    color:#cbd5e1;
+    margin-top:5px;
 }
 
 .social{
@@ -253,6 +285,19 @@ section{
     margin-bottom:20px;
 }
 
+.featured-project{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.project-tag{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:7px 14px;
+    border-radius:50px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
 .project-card{
     min-height:250px;
     display:flex;
@@ -282,6 +327,55 @@ section{
 .contact-card p{
     color:#cbd5e1;
     margin-top:10px;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:20px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#38bdf8;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:40px;
+}
+
+.timeline-dot{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#38bdf8;
+    position:absolute;
+    left:12px;
+    top:10px;
+}
+
+.timeline-content{
+    background:#111827;
+    padding:25px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.timeline-content h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.timeline-content p{
+    color:#cbd5e1;
+    line-height:1.7;
 }
 
 footer{
